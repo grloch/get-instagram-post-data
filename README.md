@@ -10,7 +10,9 @@
     </p>
     <p>
         For the post on https://www.instagram.com/p/B4wiFxsg7PK/, you need to use:
-        <code><b>getInstagramPostData(B4wiFxsg7PK)</b></code>
+        <code>
+           getInstagramPostData(B4wiFxsg7PK)
+        </code>
     </p>
     <p>
         You going to need <a href="https://unpkg.com/axios/dist/axios.min.js">axios</a> to this function work.
@@ -20,9 +22,8 @@
     </p>
 
 </div>
+
 <div>
-
-
     <h2>user:</h2>
     <p>Return info of the poster:</p>
     <h3>user.is_verified:</h3>
