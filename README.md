@@ -10,7 +10,7 @@
     </p>
     <p>
         For the post on https://www.instagram.com/p/B4wiFxsg7PK/, you need to use:
-        getInstagramPostData(<b>B4wiFxsg7PK</b>)
+        <code>getInstagramPostData(<b>B4wiFxsg7PK</b>)</code>
     </p>
     <p>
         You going to need <a href="https://unpkg.com/axios/dist/axios.min.js">axios</a> to this function work.
