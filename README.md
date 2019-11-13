@@ -23,6 +23,7 @@
 <code>
     post.user.is_verified: <b>false</b>
 </code>
+<br>
 <code>
     post.user.is_verified: <b>true</b>
 </code>
