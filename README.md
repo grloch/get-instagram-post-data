@@ -32,9 +32,34 @@
     <br>
     <code>
 		post.user.is_verified: <b>true</b>
-	</code>
+    </code>
+
+    <h3>user.id:</h3>
+    <p>string with user id number</p>
+    <code>post.user.id: <b>123456789</code>
+
+    <h3>user.profilePic:</h3>
+    <p>string with user profile picture url</p>
+    <code>
+        post.user.profilePic:
+            <b>https://instagram.fcgh8-1.fna.fbcdn.net/....jpg?_nc_ht=instagram.fcgh8-1.fna.fbcdn.net</b>
+        </code>
+
+    <h3>user.name:</h3>
+    <p>string with user name</p>
+    <ul>
+        <li>post.user.name: <b>9Gag</b></li>
+    </ul>
+
+    <h3>user.full_name:</h3>
+    <p>string with user name</p>
+    <ul>
+        <li>post.user.full_name: <b>9GAG: Go Fun The World</b></li>
+    </ul>
 </div>
-<div></div>
+<div>
+
+</div>
 <div></div>
 <div></div>
 <div></div>
