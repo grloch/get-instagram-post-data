@@ -26,11 +26,11 @@
 <h3>user.is_verified:</h3>
 <p>boolean value <b>{true or false}</b></p>
 <pre>post.user.is_verified: <b>false</b>
-    post.user.is_verified: <b>true</b></pre>
+post.user.is_verified: <b>true</b></pre>
 
 <h3>user.id:</h3>
 <p>string with user id number</p>
-<pre>post.user.id: <b>123456789</pre>
+<pre>post.user.id: <b>123456789</b></pre>
 
 <h3>user.profilePic:</h3>
 <p>string with user profile picture url</p>
@@ -63,9 +63,8 @@
 <pre>post.location.id: <b>Some beautifull place</b></pre>
 
 <h2>type:</h2>
-    <h3>post.type</h3>
-    <p>string with post type (video, picture or album):</p>
-    <pre>post.type: <b>"video"</b></pre>
-    <pre>post.type: <b>"picture"</b></pre>
-    <pre>post.type: <b>"album"</b></pre>
-    
+<h3>post.type</h3>
+<p>string with post type (video, picture or album):</p>
+<pre>post.type: <b>"video"</b></pre>
+<pre>post.type: <b>"picture"</b></pre>
+<pre>post.type: <b>"album"</b></pre>
