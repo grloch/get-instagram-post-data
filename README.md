@@ -21,9 +21,12 @@
 <h3>user.is_verified:</h3>
 <p>boolean value <b>{true or false}</b></p>
 <code>
-    post.user.is_verified: <b>false</b><br>
+    post.user.is_verified: <b>false</b>
+</code>
+<code>
     post.user.is_verified: <b>true</b>
-    <code>
+</code>
+
 
 <h3>user.id:</h3>
 <p>string with user id number</p>
