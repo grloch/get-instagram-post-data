@@ -13,6 +13,9 @@
         <code>getInstagramPostData(<b>B4wiFxsg7PK</b>)</code>
     </p>
     <p>
+        Before call the function, create the funcion <pre>function instagramPostDataBuilder(data){}</pre>
+    </p>
+    <p>
         You going to need <a href="https://unpkg.com/axios/dist/axios.min.js">axios</a> to this function work.
     </p>
     <p>
@@ -20,13 +23,17 @@
     </p>
 </div>
 
+<h2>url</h2>
+<p>Return post url</p>
+<pre>post.url: <b>"https://www.instagram.com/p/12345"</b></pre>
+
 <h2>user:</h2>
 <p>Return info of the poster:</p>
 
 <h3>user.is_verified:</h3>
 <p>boolean value <b>{true or false}</b></p>
 <pre>post.user.is_verified: <b>false</b>
-    post.user.is_verified: <b>true</b></pre>
+        post.user.is_verified: <b>true</b></pre>
 
 <h3>user.id:</h3>
 <p>string with user id number</p>
@@ -66,9 +73,9 @@
 <h3>post.type</h3>
 <p>string with post type (video, picture or album):</p>
 <pre>
-post.type: <b>"video"</b>
-post.type: <b>"picture"</b>
-post.type: <b>"album"</b></pre>
+    post.type: <b>"video"</b>
+    post.type: <b>"picture"</b>
+    post.type: <b>"album"</b></pre>
 
 <h2>likes:</h2>
 <h3>post.likes</h3>
