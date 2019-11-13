@@ -89,12 +89,12 @@ post.type: <b>"album"</b></pre>
 
 <h2>text</h2>
 <p>String with postext, it will replace line breaks (\n) for break tag (&lt;br&gt;)</p>
-<pre>post.text: "This is a nice JS script, &lt;br&gt;you NEED to download it!!!"</pre>
+<pre>post.text: <b>"This is a nice JS script, &lt;br&gt;you NEED to download it!!!"</b></pre>
 
 <h2>comments</h2>
 
 <h3>post.comments.count</h3>
 <p>Return a number of comments on the post:</p>
-<pre>post.comments.count: 123456789</pre>
+<pre>post.comments.count: <b>123456789</b></pre>
 <h3>comments[n]</h3>
 <p>post.comments.comments[n] ... (on development will return post comments)</p>
