@@ -24,6 +24,5 @@
     <h2>user:</h2>
     <p>Return info of the poster:</p>
     <h3>user.is_verified:</h3>
-    <p>boolean value <b>{true or false}</b></p>
-    <p>post.user.is_verified: <b>false</b></p>
+    <code>boolean value <b>{true or false}</b><br>    post.user.is_verified: <b>false</b></code>
 </div>
