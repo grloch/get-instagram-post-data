@@ -24,16 +24,8 @@
     <h2>user:</h2>
     <p>Return info of the poster:</p>
     <h3>user.is_verified:</h3>
-    <code>
+    <pre>
         boolean value <b>{true or false}</b>
         post.user.is_verified: <b>false</b>
-    </code>
+    </pre>
 </div>
-
-
-<style>
-    code {
-        display: block;
-        white-space: pre-wrap
-    }
-</style>
