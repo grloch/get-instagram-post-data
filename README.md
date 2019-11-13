@@ -1,4 +1,4 @@
-<section>
+<div>
     <h1>
         Instagram JSON getter
     </h1>
@@ -19,8 +19,8 @@
         The main funcion will get the JSON and build a JSON as return:
     </p>
 
-</section>
-<section>
+</div>
+<div>
 
 
     <h2>user:</h2>
@@ -61,8 +61,8 @@
         <li>post.user.full_name: <b>9GAG: Go Fun The World</b></li>
     </ul>
     <hr>
-</section>
-<section>
+</div>
+<div>
     <h2>location: </h2>
     <p>If post has location, it will return id and location name, else it return <b>null</b>:</p>
 
@@ -85,9 +85,9 @@
         <li>post.location.id: <b>Some beautifull place</b></li>
     </ul>
     <hr>
-</section>
+</div>
 
-<section>
+<div>
     <h2>type:</h2>
     <h3>post.type</h3>
     <p>string with post type (video, picture or album):</p>
@@ -97,9 +97,9 @@
         <li>post.type: <b>"album"</b></li>
     </ul>
     <hr>
-</section>
+</div>
 
-<section>
+<div>
     <h2>likes:</h2>
     <h3>post.likes</h3>
     <p>string with the number of likes of the post</p>
@@ -109,9 +109,9 @@
         </li>
     </ul>
     <hr>
-</section>
+</div>
 
-<section>
+<div>
     <h2>media</h2>
     <p>Has 3 types of return: video, picture or gallery:</p>
 
@@ -123,9 +123,9 @@
 
     <h3>If gallery</h3>
     <p>post.media:{gallery info} (in development)</p>
-</section>
+</div>
 
-<section>
+<div>
     <h2>text</h2>
     <p>String with postext, it will replace line breaks (\n) for break tag (&lt;br&gt;)</p>
     <ul>
@@ -133,9 +133,9 @@
             post.text: "This is a nice JS script, &lt;br&gt;you NEED to download it!!!"
         </li>
     </ul>
-</section>
+</div>
 
-<section>
+<div>
     <h2>comments</h2>
 
     <h3>post.comments.count</h3>
@@ -143,4 +143,4 @@
     <code>post.comments.count: 123456789</code>
     <h3></h3>
     <p>post.comments.comments[n] ... (on development will return post comments)</p>
-</section>
+</div>
