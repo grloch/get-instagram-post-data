@@ -21,7 +21,7 @@
 <h3>user.is_verified:</h3>
 <p>boolean value <b>{true or false}</b></p>
 <code>
-post.user.is_verified: <b>false</b>
+    post.user.is_verified: <b>false</b><br>
     post.user.is_verified: <b>true</b>
     <code>
 
