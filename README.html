@@ -26,7 +26,7 @@
 <h3>user.is_verified:</h3>
 <p>boolean value <b>{true or false}</b></p>
 <pre>post.user.is_verified: <b>false</b>
-post.user.is_verified: <b>true</b></pre>
+    post.user.is_verified: <b>true</b></pre>
 
 <h3>user.id:</h3>
 <p>string with user id number</p>
@@ -60,11 +60,41 @@ post.user.is_verified: <b>true</b></pre>
 
 <h4>post.location.name</h4>
 <p>String with location name</p>
-<pre>post.location.id: <b>Some beautifull place</b></pre>
+<pre>post.location.id: <b>"Some beautifull place"</b></pre>
 
 <h2>type:</h2>
 <h3>post.type</h3>
 <p>string with post type (video, picture or album):</p>
-<pre>post.type: <b>"video"</b></pre>
-<pre>post.type: <b>"picture"</b></pre>
-<pre>post.type: <b>"album"</b></pre>
+<pre>
+post.type: <b>"video"</b>
+post.type: <b>"picture"</b>
+post.type: <b>"album"</b></pre>
+
+<h2>likes:</h2>
+<h3>post.likes</h3>
+<p>string with the number of likes of the post</p>
+<pre>post.likes: <b>1234567890</b></pre>
+
+<h2>media</h2>
+<p>Has 3 types of return: video, picture or gallery:</p>
+
+<h3>If video:</h3>
+<pre>post.media:{thumbnail, video}</pre>
+
+<h3>If picture</h3>
+<pre>post.media:{picture}</pre>
+
+<h3>If gallery</h3>
+<pre>post.media:{gallery info} (in development)</pre>
+
+<h2>text</h2>
+<p>String with postext, it will replace line breaks (\n) for break tag (&lt;br&gt;)</p>
+<pre>post.text: "This is a nice JS script, &lt;br&gt;you NEED to download it!!!"</pre>
+
+<h2>comments</h2>
+
+<h3>post.comments.count</h3>
+<p>Return a number of comments on the post:</p>
+<pre>post.comments.count: 123456789</pre>
+<h3>comments[n]</h3>
+<p>post.comments.comments[n] ... (on development will return post comments)</p>
