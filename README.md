@@ -20,17 +20,16 @@
 <p>Return info of the poster:</p>
 <h3>user.is_verified:</h3>
 <p>boolean value <b>{true or false}</b></p>
-<ul>
-    <li>post.user.is_verified: <b>false</b></li>
-    <li>post.user.is_verified: <b>true</b></li>
-</ul>
+<code>
+post.user.is_verified: <b>false</b>
+    post.user.is_verified: <b>true</b>
+    <code>
 
 <h3>user.id:</h3>
 <p>string with user id number</p>
 <ul>
     <li>post.user.id: <b>123456789</b></li>
 </ul>
-
 
 <h3>user.profilePic:</h3>
 <p>string with user profile picture url</p>
@@ -122,9 +121,9 @@
 
 <code>
 
-    
     comments: {<br>
            count: return the number of comments on the post, <b>return int</b>,<br>
            comments: <br>
     }
+
 </code>
