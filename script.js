@@ -1,3 +1,12 @@
+class getInstagramPostData {
+    constructor(urlHash) {
+        this.urlHash = urlHash;
+    }
+}
+
+
+
+
 async function getInstagramPostData(urlHash) {
     function verifyPostType(info) {
         if (info.is_video) return "video";
@@ -16,7 +25,20 @@ async function getInstagramPostData(urlHash) {
     function postTextCorrector(text) {
         return (text).replace(/\n/g, "<br>")
     }
-    function buildPostMedia(postType, sidecarChildren) { }
+    function buildPostMedia(postType, data) {
+
+        if (postType == "album") {
+            output = {}
+            for (i = 0; i < data.edge_sidecar_to_children.edges.length; i++) {
+                output[i] = data.edge_sidecar_to_children.edges[i].node.display_url
+            }
+            return output;
+        }
+
+        else if (postType == "video") { }
+
+        else return data.display_resources[2].src
+    }
     function postComments(commentsArray) {
         //console.log(commentsArray)
         commentsArray.reverse();
@@ -37,6 +59,8 @@ async function getInstagramPostData(urlHash) {
 
     axios.get(`https://www.instagram.com/p/${urlHash}/?__a=1`)
         .then(function (response) {
+            console.log(response.data.graphql.shortcode_media)
+
             const post = {
                 url: `https://www.instagram.com/p/${urlHash}/`,
                 user: {
@@ -55,14 +79,12 @@ async function getInstagramPostData(urlHash) {
                 , text: postTextCorrector(response.data.graphql.shortcode_media.edge_media_to_caption.edges[0].node.text),
                 comments: {
                     count: response.data.graphql.shortcode_media.edge_media_to_parent_comment.count,
-                    comments: postComments(response.data.graphql.shortcode_media.edge_media_to_parent_comment.edges)
+                    //comments: postComments(response.data.graphql.shortcode_media.edge_media_to_parent_comment.edges)
                 }
             }
-
-            //build(post);
+            //console.log(response.data.graphql.shortcode_media.edge_sidecar_to_children.edges)
+            //console.log(post.media)
             instagramPostDataBuilder(post);
-
-            console.log(response.data.graphql.shortcode_media)
         })
         .catch(function (error) {
             console.log(`${error} in URL https://www.instagram.com/p/${url}/?__a=1 .`);
